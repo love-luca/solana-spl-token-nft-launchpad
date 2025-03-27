@@ -1,77 +1,68 @@
-# Solana-Tools
+# Solana SPL Token and NFT Launchpad
 
-A bunch of tools to help people in the Solana ecosystem. This website includes:
-- a UI to burn Solana NFTs
-- a UI to burn SPL-tokens
-- a UI to close empty accounts
-- a multi sender (a UI to send multiple tokens in 1 transaction (same token to different people/many tokens to one person/transfer solana domain name)
-- a UI to create SPL-Tokens
-- a UI to upload file to Arweave
-- a UI to update the metadata of your NFT
-- a UI to send a NFT message to the owner of your desired NFT or solana domain name
-- More tools are scheduled...
+## Overview
 
-## Getting Started
+Welcome to the Solana SPL Token and NFT Launchpad! This open-source repository allows developers and creators to seamlessly launch SPL tokens and NFTs on the Solana blockchain. Whether you're building a new crypto project, launching a community token, or minting NFTs, this project simplifies the process using Solana's high-speed, low-cost infrastructure.
 
-Clone the repo, install the dependencies and run `yarn run dev` to run the development server.
+With easy-to-use smart contracts, this launchpad supports token creation, minting NFTs, and full launchpad functionalities, including customizable tokenomics, airdrops, and referral programs. All code is written in Rust using the Anchor framework for Solana smart contract development.
 
-```bash
-git clone https://github.com/Immutal0/solana-tools.git
-cd solana-tools
-yarn install
-yarn run dev
-```
+## Features
 
+- SPL Token Creation: Launch and manage SPL tokens on Solana.
 
-## Burn NFT UI
-A UI for burning Solana NFTs and getting back $SOL from the associated token account.
+- NFT Minting: Mint, list, and manage NFTs with metadata and minting rewards.
 
-## Burn SPL-tokens UI
-A UI for burning SPL-tokens and getting back $SOL from the associated token account.
+- Airdrops: Conduct airdrop events for your community or token holders.
 
-## Close empty account UI
-A UI to close empty token account and getting back $SOL from the associated token account.
+- Referral Program: Build a referral system that rewards users for referring others.
 
-## Multi sender UI
-A UI to send multiple tokens in 1 transaction (same token to different people/many tokens to one person/transfer solana domain name)
+- Liquidity Management: Integrates with Solana's Serum DEX to add liquidity to your token's pool.
 
-## Create SPL-Tokens UI
-An UI to create SPL-Tokens with one click.
+- Burn Mechanism: Enable token burns to control supply and deflationary dynamics.
 
-## Upload File
-An UI to upload file to Arweave.
+## Technologies
 
-## Update NFT metadata UI
-An UI to update the metadata of your NFT
+- Solana: Fast and scalable blockchain platform.
 
-## Send NFT message
-An UI to send a NFT message to the owner of your desired NFT
+- Rust: Programming language used for building smart contracts.
 
-## Style
+- Anchor: Framework for building secure Solana programs.
 
-[Tailwind CSS](https://tailwindcss.com/) or [daisyUI](https://daisyui.com/) are selected tools for rapid style development.
+- Solana Web3.js: JavaScript library for interacting with the Solana blockchain.
 
-You can quickly change theme changing `daisy.themes` within `./tailwind.config.js`.
-More info here: https://daisyui.com/docs/default-themes
+- Serum DEX: Decentralized exchange integration for token liquidity.
 
-This app encourages you to use CSS Modules over other style techniques (like SASS/LESS, Styled Components, usual CSS).
-It has a modular nature and supports modern CSS. [Read more on Next.JS site](https://nextjs.org/docs/basic-features/built-in-css-support).
-Anyway, if you want to connect LESS there is example code in `./next.config.js`
+- Metaplex: NFT standards and tools for minting on Solana.
 
-## Deploy on Vercel
+## Smart Contract Overview
 
-Before push run locally `npm run build` to make sure app can be build successfully on vercel.
+The smart contracts in this repository cover the following functionalities:
 
-Vercel will automatically create environment and deployment for you if you have vercel account connected to your GitHub account. Go to the vercel.com to connect it.
-Then any push to `main` branch will automatically rebuild and redeploy app.
+-SPL Token Contract
 
-To deploy on Vercel use the following settings :
+- Mint Tokens: Create your own token on Solana.
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/35653371/157638049-4944f065-5985-4a35-bbe6-e46efc984737.png"/>
-</p>
+- Transfer Tokens: Send tokens between Solana accounts.
 
+- Burn Tokens: Reduce token supply by burning tokens.
 
-## Community
-If you have questions or any troubles, feel free to reach me on 
-X [@Immutal0_](https://x.com/Immutal0_) and Telegram [@Immutal0](https://t.me/Immutal0)
+-NFT Minting Contract
+
+- Mint NFTs: Create unique NFTs using metadata.
+
+- Transfer NFTs: Move NFTs between users' wallets.
+
+- Minting Rewards: Incentivize users with reward structures when minting.
+
+-Airdrop & Referral System
+
+- Airdrop Functionality: Distribute tokens to users based on predefined conditions.
+
+- Referral Rewards: Reward users with trading fees or tokens for referring others.
+
+## Developer
+
+For more information feel free to contact me
+
+- Twitter  [DeFiMaxi](https://x.com/defai_maxi) 
+- Telegram [Rhettjel](https://t.me/rhettjel)
